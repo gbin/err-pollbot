@@ -146,7 +146,7 @@ class PollBot(BotPlugin):
         if not option in options:
             return 'Option not found. Use !poll show to see all options of the current poll.'
 
-        username = mess.frm.stripped
+        username = mess.frm.client
 
         if username in usernames:
             return 'You have already voted.'
